@@ -43,8 +43,8 @@
 ## Model Calculations
     - In-Sample
         For an initial model, an in-sample method is used. The model is created using data from
-        1962 to 2014, and then projected over the same time period. This is used as an estimator of whether the variables
-        can be used to estimate default.
+        1962 to 2014, and then projected over the same time period. This is used as an estimator of
+        whether the variables can be used to estimate default.
 
     - Standard Out-Sample
         A standard out-sample model is then determined. A static model is created from 1962 to 1990, and is
