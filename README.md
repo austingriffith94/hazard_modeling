@@ -1,7 +1,11 @@
 # hazard_modeling
 ## Model Variables
-    The SAS code creates a hazard model for default. At the start, a set of variables are determined to as good measures
-    for determining default. These values include:
+    This SAS code creates a series of hazard models for predicting default. At the start, a set of variables are
+    determined that would have some relevance to a firm's default. Some variables were informed from the paper
+    "Bankruptcy Predictions with Industry Effects" by Sudheer Chava and Robert Jarrow. Other variables are commonly
+    used financial metrics that are used to indicate firm health.
+
+    These variables include:
 
     - Quick Ratio
         A firm's reliability on inventory and other current assets to settle short-term debts.
@@ -25,7 +29,8 @@
         above the value of the debt, as debt increases so does the probability of default.
     - Distance to Default
         Distance to default marks the firms distance to face value of debt. As this value decreases,
-        the firm approaches default.
+        the firm approaches default. In this code, the distance to default is calculating using a "naive" method
+        by using direct calculation.
     - Probability of Default
         Probability of default is the standard normal distribution of the distance to default used to determine the
         likelihood of default. As this value increases, so should the estimation of default.
