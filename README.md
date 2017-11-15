@@ -16,26 +16,26 @@
         It should be expected that the lower the working capital ratio drops below 1, the more likely
         the firm is to default
     - Return on Total Assets
-        A measure of the effectiveness of money invested in a firm. It would be expected that the lower the value,
-        the higher chance of default.
+        A measure of the effectiveness of money invested in a firm. It would be expected that the lower the RoTA
+        value, the higher chance of default.
     - Ohlson O-Score
         A credit strength test used to determine a firm’s likelihood of failure, with larger scores representing
         a higher probability of bankruptcy. Therefore, as the O-score increases, so should potential defaults.
     - Sales as a percentage of Total Assets
-        Determines sales of a firm relative to its total size. The larger the sales as a proportion of firm size
-        serves as a marker of better financial health, thus making it less probable for bankruptcy.
+        Determines sales of a firm relative to its total size. A large percentage of sales as a proportion of
+        firm size serves as a marker of better financial health, thus making it less probable for bankruptcy.
     - Face Value of Debt as a percentage of total assets
         An indicator of how high the debt is relative to a firm’s size. Since the firm needs to keep its assets
         above the value of the debt, as debt increases so does the probability of default.
     - Distance to Default
         Distance to default marks the firms distance to face value of debt. As this value decreases,
         the firm approaches default. In this code, the distance to default is calculating using a "naive" method
-        by using direct calculation.
+        by using direct calculation of the value.
     - Probability of Default
         Probability of default is the standard normal distribution of the distance to default used to determine the
         likelihood of default. As this value increases, so should the estimation of default.
 
-    Bankruptcy data added and matched on a per firm, per year basis. From here, a logistical
+    Bankruptcy data is then added and matched on a per firm, per year basis. From here, a logistical
     regression can be used to determine coefficients for each variable that can be applied to a model used to estimate
     default.
 
