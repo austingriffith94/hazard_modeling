@@ -1,9 +1,10 @@
 # hazard_modeling
 ## Model Variables
-    This SAS code creates a series of hazard models for predicting default. At the start, a set of variables are
-    determined that would have some relevance to a firm's default. Some variables were informed from the paper
-    "Bankruptcy Predictions with Industry Effects" by Sudheer Chava and Robert Jarrow. Other variables are commonly
-    used financial metrics that are used to indicate firm health.
+    This SAS code creates a series of hazard models for predicting default.
+    At the start, a set of variables are determined that would have some relevance to a firm's default.
+    Some variables were informed from the paper "Bankruptcy Predictions with Industry Effects"
+    by Sudheer Chava and Robert Jarrow.
+    Other variables are commonly used financial metrics that are used to indicate firm health.
 
     These variables include:
 
@@ -35,9 +36,9 @@
         Probability of default is the standard normal distribution of the distance to default used to determine the
         likelihood of default. As this value increases, so should the estimation of default.
 
-    Bankruptcy data is then added and matched on a per firm, per year basis. From here, a logistical
-    regression can be used to determine coefficients for each variable that can be applied to a model used to estimate
-    default.
+    Bankruptcy data is then added and matched on a per firm, per year basis.
+    From here, a logistical regression can be used to determine coefficients for each variable that
+    can be applied to a model used to estimate default.
 
 ## Model Calculations
     - In-Sample
