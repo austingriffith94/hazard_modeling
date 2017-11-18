@@ -125,6 +125,10 @@ from dsf
 group by CUSIP, YEAR;
 quit;
 
+/*removes dsf file to save temporary work space*/
+proc delete data = dsf;
+run;
+
 /*--------------------------Merge Funda and DSF--------------------------*/
 /*sorts dsf for merging data sets*/
 /*gets first value per year, removes duplicate years*/
@@ -337,13 +341,13 @@ title1 "Out-Sample Logistics";
 /*gets data set for 62 to 90 for logistic data*/
 data out_left;
 set main_data;
-if YEAR >= 1990;
+if YEAR <= 1990;
 run;
 
 /*gets data set for 91 to 14 for out sample estimation*/
 data out_right;
 set main_data;
-if YEAR <= 1991;
+if YEAR >= 1991;
 run;
 
 /*sorts data by firm, year*/

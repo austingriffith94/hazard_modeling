@@ -65,6 +65,7 @@
 
 ## Model Comparison
     The output data allows for a comparison of the logistic output between the in-sample and standard out-sample.
+    The Chi-Square statistic measures indicate the variables are accurate at determining default.
     For out-samples, there is an averaged table of beta values for each method used.
     Furthermore, the the estimations of bankruptcies were ranked into deciles to observe the effectiveness of the
     variables and methods of modeling. A high number bankruptcies falling within the first and second decile of the
