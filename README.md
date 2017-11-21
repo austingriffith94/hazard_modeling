@@ -51,9 +51,9 @@
         then used to estimate the bankruptcy for each year from 1991 to 2014.
 
     - Rolling Out-Sample
-        For comparison with the standard out-sample, a rolling out-sample is created. This creates a model from 1962 to
-        1990 to estimate the 1991 defaults. For the next year, a new model is created from 1962 to 1991 to determine 1992
-        defaults. This is continued to 2014.
+        For comparison with the standard out-sample, a rolling out-sample is created. This creates a
+        model from 1962 to 1990 to estimate the 1991 defaults. For the next year, a new model is
+        created from 1962 to 1991 to determine 1992 defaults. This is continued to 2014.
             Rolling:
             Tn estimated with 1962 to Tn-1
 
@@ -61,7 +61,7 @@
         For another comparison, a fixed window out-sample model is created. This is created using a rolling 28 year
         window to estimate defaults from 1991 to 2014.
             Fixed Window:
-            Tn estimated with 1962+1 to Tn-1
+            Tn estimated with 1962+n to Tn-1
 
 ## Model Comparison
     The output data allows for a comparison of the logistic output between the in-sample and standard out-sample.
