@@ -35,18 +35,20 @@ Bankruptcy data is then added and matched on a per firm, per year basis. From he
 - Rolling Out-Sample
     For comparison with the standard out-sample, a rolling out-sample is created. This creates a model from 1962 to 1990 to estimate the 1991 defaults. For the next year, a new model is created from 1962 to 1991 to determine 1992 defaults. This is continued to 2014.
 
-    Rolling:
-        - Tn estimated with 1962 to Tn-1
-        - T = year of current iteration
-        - n = iteration
+    Tn estimated with 1962 to Tn-1
+
+    T = year of current iteration
+
+    n = iteration
 
 - Fixed Window Out-Sample
     For another comparison, a fixed window out-sample model is created. This is created using a rolling 28 year window to estimate defaults from 1991 to 2014.
 
-    Fixed Window:
-        - Tn estimated with 1962+n to Tn-1
-        - T = year of current iteration
-        - n = iteration
+    Tn estimated with 1962+n to Tn-1
+
+    T = year of current iteration
+
+    n = iteration
 
 ## Model Comparison
 
