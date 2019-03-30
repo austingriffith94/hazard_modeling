@@ -1,7 +1,7 @@
 # hazard_modeling
 ## Model Variables
 
-This SAS code creates a series of hazard models for predicting default. The data interpreted by the code can be found at the link [here.](https://goo.gl/DoHABj)
+This SAS code creates a series of hazard models for predicting default. The funda and dsf data files interpreted by the code can be found at the link [here.](https://goo.gl/DoHABj)
 
 A set of variables that would have some relevance to a firm's default are chosen. Some variables were informed from the paper "Bankruptcy Predictions with Industry Effects" by Sudheer Chava and Robert Jarrow. Other variables are commonly used financial metrics that are used to indicate firm health.
 
